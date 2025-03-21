@@ -1,0 +1,17 @@
+{
+  "name": "evidencedotdev-morph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd app && npm run sources && npm run build",
+    "install-app": "cd app && npm install",
+    "start": "node server.js"
+  },
+  "author": "KT83",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
