@@ -10,12 +10,12 @@ COPY package*.json ./
 # 依存パッケージをインストール（プロダクションモード）
 RUN npm install --production
 
-RUN npm run install-app --production
-
-RUN npm run build
-
 # アプリケーションのソースコードをコピー
 COPY . .
+
+RUN npm run sources
+
+RUN npm run build
 
 RUN adduser --system --uid 1001 evidence
 USER evidence
