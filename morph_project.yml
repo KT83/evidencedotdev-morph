@@ -1,0 +1,6 @@
+build:
+  use_custom_dockerfile: true
+default_connection: DUCKDB
+deployment:
+  provider: gcp
+project_id: null
