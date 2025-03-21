@@ -1,5 +1,5 @@
 # Node.jsの公式軽量イメージを利用
-FROM node:18-alpine
+FROM node:18-slim
 
 # 作業ディレクトリを設定
 WORKDIR /app
